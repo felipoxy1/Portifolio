@@ -1,0 +1,60 @@
+@import '../../styles/variaveis';
+
+.projectsSection {
+ margin-top: 2rem;
+ border-bottom: 2px solid $Bordas;
+ padding-bottom: 2rem;
+}
+
+.projectsTitle {
+ font-size: $font-size-section;
+}
+
+.projectsList {
+ margin-top: 2rem;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ gap: 20px;
+}
+
+.projectCard {
+ background-color: $Bordas;
+ padding: 15px;
+ max-width: 330px;
+ height: 350px;
+ border-radius: 10px;
+ position: relative;
+}
+
+.projectCardImg {
+ width: 300px;
+ height: 150px;
+}
+
+.projectCardTitle {
+ font-size: $font-size-subtitulo;
+ margin-top: 0.5rem;
+}
+
+.projectCardText {
+ margin-top: 1rem;
+ font-size: $font-size-text;
+ color: $Texto-Secundario;
+}
+
+.projectCardButton {
+ display: flex;
+ position: absolute;
+ bottom: 5px;
+ left: 50px;
+ gap: 30px;
+}
+
+a {
+ display: flex;
+ align-items: center;
+ text-decoration: none;
+ color: $Texto-Principal;
+ text-align: center;
+ gap: 5px;
+}
