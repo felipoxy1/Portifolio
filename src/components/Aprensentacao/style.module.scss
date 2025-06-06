@@ -1,0 +1,68 @@
+@import '../../styles/variaveis';
+
+.apresentacao {
+ position: relative; /* para o botão flutuar dentro */
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 5rem;
+}
+
+.toggleTema {
+ position: absolute;
+ top: -2.5rem; /* ajusta para ficar acima do título */
+ left: 50%;
+ transform: translateX(-50%);
+ background: $Botao-Primario;
+ border: none;
+ border-radius: 50%;
+ padding: 0.5rem 0.6rem;
+ font-size: 1.3rem;
+ cursor: pointer;
+ color: white;
+ box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+ transition: background-color 0.3s ease;
+
+ &:hover {
+  background-color: $Botao-Primario-Hover;
+ }
+}
+
+.titulo {
+ color: $Texto-Principal;
+ font-size: $font-size-titulo;
+ text-align: center;
+ margin-top: 3rem;
+}
+
+.subTitulo {
+ margin-top: 1rem;
+ text-align: center;
+ font-size: $font-size-subtitulo;
+ color: $Texto-Secundario;
+}
+
+.text {
+ text-align: center;
+ color: $Texto-Secundario;
+ margin-top: 1rem;
+ font-size: $font-size-text;
+}
+
+.buttonDownload {
+ color: $Texto-Principal;
+ background-color: $Botao-Primario;
+ border: none;
+ font-size: $font-size-text;
+ font-weight: $font-weight-medium;
+ padding: 0.5rem 1rem;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: background-color 0.8s ease;
+ margin-top: 1.5rem;
+ text-decoration: none;
+
+ &:hover {
+  background-color: $Botao-Primario-Hover;
+ }
+}
