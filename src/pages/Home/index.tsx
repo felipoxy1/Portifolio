@@ -1,4 +1,5 @@
 import Apresentacao from '../../components/Aprensentacao';
+import Conhecimentos from '../../components/Conhecimentos';
 import Sobre from '../../components/Sobre';
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
   <>
    <Apresentacao />
    <Sobre />
+   <Conhecimentos />
   </>
  );
 };

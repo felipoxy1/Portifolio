@@ -1,0 +1,27 @@
+@import '../../styles/variaveis';
+
+.knowleadsSection {
+ margin-top: 2rem;
+}
+
+.knowleadsTitle {
+ font-size: $font-size-section;
+}
+
+.knowleadsGrid {
+ margin-top: 1.5rem;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+ grid-gap: 2rem;
+}
+
+.icon {
+ width: 100px;
+ height: 100px;
+ color: #6b7280;
+ transition: color 0.3s ease;
+
+ &:hover {
+  color: var(--hover-color, #61dafb);
+ }
+}
