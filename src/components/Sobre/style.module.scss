@@ -8,9 +8,15 @@
 
 .aboutTitle {
  font-size: $font-size-section;
+ @media (max-width: 767px) {
+  text-align: center;
+ }
 }
 
 .aboutText {
  color: var(--Texto-Secundario);
  margin-top: 1rem;
+ @media (max-width: 767px) {
+  margin-left: 5%;
+ }
 }
