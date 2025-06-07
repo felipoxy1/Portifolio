@@ -1,12 +1,24 @@
 //Cores
 
-$Fundo-Principal: #0e1116;
-$Texto-Principal: #e5e5e5;
-$Texto-Secundario: #a1a1aa;
-$Botao-Primario: #3b82f6;
-$Botao-Primario-Hover: #2563e8;
-$Bordas: #1f2937;
-$Icones-Links: #6b7280;
+:root {
+ --Fundo-Principal: #ffffff;
+ --Texto-Principal: #1f1f1f;
+ --Texto-Secundario: #4b5563;
+ --Botao-Primario: #3b82f6;
+ --Botao-Primario-Hover: #2563e8;
+ --Bordas: #e5e7eb;
+ --Icones-Links: #6b7280;
+}
+
+[data-theme='dark'] {
+ --Fundo-Principal: #0e1116;
+ --Texto-Principal: #e5e5e5;
+ --Texto-Secundario: #a1a1aa;
+ --Botao-Primario: #3b82f6;
+ --Botao-Primario-Hover: #2563e8;
+ --Bordas: #1f2937;
+ --Icones-Links: #6b7280;
+}
 
 //FontSizes
 

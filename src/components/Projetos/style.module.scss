@@ -2,7 +2,7 @@
 
 .projectsSection {
  margin-top: 2rem;
- border-bottom: 2px solid $Bordas;
+ border-bottom: 2px solid var(--Bordas);
  padding-bottom: 2rem;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .projectCard {
- background-color: $Bordas;
+ background-color: var(--Bordas);
  padding: 15px;
  max-width: 330px;
  height: 350px;
@@ -39,7 +39,7 @@
 .projectCardText {
  margin-top: 1rem;
  font-size: $font-size-text;
- color: $Texto-Secundario;
+ color: var(--Texto-Secundario);
 }
 
 .projectCardButton {
@@ -54,7 +54,7 @@ a {
  display: flex;
  align-items: center;
  text-decoration: none;
- color: $Texto-Principal;
+ color: var(--Texto-Principal);
  text-align: center;
  gap: 5px;
  margin-bottom: 10px;

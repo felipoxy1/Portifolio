@@ -1,8 +1,8 @@
 @import './variaveis';
 
 body {
- background-color: $Fundo-Principal;
- color: $Texto-Principal;
+ background-color: var(--Fundo-Principal);
+ color: var(--Texto-Principal);
 }
 
 * {

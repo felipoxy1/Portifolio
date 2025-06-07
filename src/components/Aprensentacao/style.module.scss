@@ -13,7 +13,7 @@
  top: -2.5rem; /* ajusta para ficar acima do título */
  left: 50%;
  transform: translateX(-50%);
- background: $Botao-Primario;
+ background: var(--Botao-Primario);
  border: none;
  border-radius: 50%;
  padding: 0.5rem 0.6rem;
@@ -24,12 +24,12 @@
  transition: background-color 0.3s ease;
 
  &:hover {
-  background-color: $Botao-Primario-Hover;
+  background-color: var(--Botao-Primario-Hover);
  }
 }
 
 .titulo {
- color: $Texto-Principal;
+ color: var(--Texto-Principal);
  font-size: $font-size-titulo;
  text-align: center;
  margin-top: 3rem;
@@ -39,19 +39,19 @@
  margin-top: 1rem;
  text-align: center;
  font-size: $font-size-subtitulo;
- color: $Texto-Secundario;
+ color: var(--Texto-Secundario);
 }
 
 .text {
  text-align: center;
- color: $Texto-Secundario;
+ color: var(--Texto-Secundario);
  margin-top: 1rem;
  font-size: $font-size-text;
 }
 
 .buttonDownload {
- color: $Texto-Principal;
- background-color: $Botao-Primario;
+ color: var(--Texto-Principal);
+ background-color: var(--Botao-Primario);
  border: none;
  font-size: $font-size-text;
  font-weight: $font-weight-medium;
@@ -63,6 +63,6 @@
  text-decoration: none;
 
  &:hover {
-  background-color: $Botao-Primario-Hover;
+  background-color: var(--Botao-Primario-Hover);
  }
 }

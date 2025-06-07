@@ -2,7 +2,7 @@
 
 .contactSection {
  margin-top: 2rem;
- border-bottom: 2px solid $Bordas;
+ border-bottom: 2px solid var(--Bordas);
  padding-bottom: 2rem;
 }
 
@@ -26,8 +26,8 @@
 }
 
 .contactInput {
- color: $Texto-Secundario;
- background-color: $Bordas;
+ color: var(--Texto-Secundario);
+ background-color: var(--Bordas);
  border: none;
  height: 3rem;
  width: 40vw;
@@ -51,7 +51,7 @@
 .contactLinksIcon {
  height: 3rem;
  width: 3rem;
- color: $Icones-Links;
+ color: var(--Icones-Links);
 
  :hover {
   color: #fff;
@@ -59,8 +59,8 @@
 }
 
 .contactButton {
- background-color: $Botao-Primario;
- color: $Texto-Principal;
+ background-color: var(--Botao-Primario);
+ color: var(--Texto-Principal);
  width: 100%;
  border: none;
  height: 2.5rem;
