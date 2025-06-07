@@ -1,0 +1,78 @@
+@import '../../styles//variaveis';
+
+.contactSection {
+ margin-top: 2rem;
+ border-bottom: 2px solid $Bordas;
+ padding-bottom: 2rem;
+}
+
+.contactTitle {
+ font-size: $font-size-section;
+}
+
+.contactArea {
+ display: flex;
+ gap: 40px;
+}
+
+.contactForm {
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ align-content: flex-start;
+ margin: 1rem 0 0 0;
+ width: fit-content;
+ gap: 20px;
+}
+
+.contactInput {
+ color: $Texto-Secundario;
+ background-color: $Bordas;
+ border: none;
+ height: 3rem;
+ width: 40vw;
+ padding-left: 16px;
+ text-align: start;
+ border-radius: 8px;
+ font-weight: $font-weight-bold;
+}
+
+.contactLinks {
+ margin: 1rem 0;
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+
+ a {
+  margin-bottom: 0;
+ }
+}
+
+.contactLinksIcon {
+ height: 3rem;
+ width: 3rem;
+ color: $Icones-Links;
+
+ :hover {
+  color: #fff;
+ }
+}
+
+.contactButton {
+ background-color: $Botao-Primario;
+ color: $Texto-Principal;
+ width: 100%;
+ border: none;
+ height: 2.5rem;
+ font-size: $font-size-text;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 5px;
+ border-radius: 8px;
+ font-weight: $font-weight-bold;
+
+ .contactButtonIcon {
+  margin: 0;
+ }
+}
