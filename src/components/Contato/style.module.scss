@@ -73,11 +73,11 @@
  height: 3rem;
  width: 3rem;
  color: var(--Icones-Links);
- transition: 0.5s;
  overflow: visible;
  transform-origin: center;
+ transition: 0.5s;
 
- :hover {
+ &:hover {
   color: var(--Icones-Hover);
   transform: scale(1.1);
  }
