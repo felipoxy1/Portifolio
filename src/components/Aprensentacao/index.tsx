@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { TypeAnimation } from 'react-type-animation';
 import styles from './style.module.scss';
 
 const Apresentacao = () => {
@@ -31,29 +32,56 @@ const Apresentacao = () => {
  };
 
  return (
-  <>
-   <header className={styles.apresentacao}>
-    <button
-     onClick={alternarTema}
-     className={styles.toggleTema}
-     aria-label="Alternar tema"
-    >
-     🌙 / ☀️
-    </button>
-    <h1 className={styles.titulo}>Luiz Albuquerque</h1>
-    <h2 className={styles.subTitulo}>Desenvolvedor Front-End</h2>
-    <p className={styles.text}>
-     Criando interfaces mordernas e funcionais com React e Vue
-    </p>
-    <a
-     className={styles.buttonDownload}
-     download
-     href="/Luiz-Curriculo.pdf"
-    >
-     Download CV
-    </a>
-   </header>
-  </>
+  <header className={styles.apresentacao}>
+   <button
+    onClick={alternarTema}
+    className={styles.toggleTema}
+    aria-label="Alternar tema"
+   >
+    🌙 / ☀️
+   </button>
+
+   <h1 className={styles.titulo}>
+    <TypeAnimation
+     sequence={[
+      'Luiz Albuquerque',
+      10000,
+      'Tambem conhecido como: felipoxy1',
+      3000,
+     ]}
+     speed={70}
+     cursor={true}
+     repeat={Infinity}
+    />
+   </h1>
+
+   <h2 className={styles.subTitulo}>
+    <TypeAnimation
+     sequence={['Desenvolvedor Front-End', 2000]}
+     speed={60}
+     cursor={false}
+     repeat={1}
+    />
+   </h2>
+
+   <p className={styles.text}>
+    <TypeAnimation
+     sequence={[
+      'Criando interfaces mordernas e funcionais com React e Vue',
+     ]}
+     speed={50}
+     cursor={false}
+    />
+   </p>
+
+   <a
+    className={styles.buttonDownload}
+    download
+    href="/Luiz-Curriculo.pdf"
+   >
+    Download CV
+   </a>
+  </header>
  );
 };
 

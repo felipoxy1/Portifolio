@@ -61,6 +61,7 @@
 
  a {
   margin-bottom: 0;
+  cursor: pointer;
  }
 
  @media (max-width: 767px) {
@@ -72,9 +73,13 @@
  height: 3rem;
  width: 3rem;
  color: var(--Icones-Links);
+ transition: 0.5s;
+ overflow: visible;
+ transform-origin: center;
 
  :hover {
-  color: #fff;
+  color: var(--Icones-Hover);
+  transform: scale(1.1);
  }
 }
 

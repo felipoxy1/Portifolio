@@ -33,8 +33,15 @@
  height: 100px;
  color: #6b7280;
  transition: color 0.3s ease;
+ transition: 0.5s;
 
  &:hover {
+  filter: drop-shadow(0 0 5px var(--hover-color, #61dafb));
   color: var(--hover-color, #61dafb);
+  transform: scale(1.1);
+  transition:
+   filter 0.3s ease,
+   transform 0.5s,
+   color 0.3s ease;
  }
 }

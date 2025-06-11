@@ -35,6 +35,11 @@
  height: 350px;
  border-radius: 10px;
  position: relative;
+ transition: 0.5s;
+ box-shadow: 0 8px 16px rgba(100, 149, 237, 0.15);
+ &:hover {
+  transform: scale(1.02);
+ }
 }
 
 .projectCardImg {
