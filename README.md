@@ -4,8 +4,7 @@ Este é o meu portfólio pessoal como desenvolvedor front-end, criado com **Reac
 
 ## 🔗 Acesse
 
-> **Link de produção:** [https://seu-link.vercel.app](https://seu-link.vercel.app)  
-> (Edite aqui com o link real quando publicar)
+> **Link de produção:** [https://portifolio-eosin-seven.vercel.app](https://portifolio-eosin-seven.vercel.app)  
 
 ---
 
