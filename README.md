@@ -100,7 +100,7 @@ npm run dev
 Caso queira entrar em contato comigo:
 
 - Email: `1luiz.albuquerque@gmail.com`
-- LinkedIn: [linkedin.com/in/seuperfil](https://linkedin.com/in/seuperfil)
+- LinkedIn: [https://www.linkedin.com/in/luizpalbuquerque/](https://www.linkedin.com/in/luizpalbuquerque/)
 - GitHub: [github.com/felipoxy1](https://github.com/felipoxy1)
 
 ---
