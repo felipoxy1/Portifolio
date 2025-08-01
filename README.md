@@ -28,7 +28,6 @@ Este é o meu portfólio pessoal como desenvolvedor front-end, criado com **Reac
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vite](https://vitejs.dev/)
 - [Sass (SCSS)](https://sass-lang.com/)
-- [Zustand](https://github.com/pmndrs/zustand) – gerenciamento de estado
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [React Router DOM](https://reactrouter.com/)
 - [EmailJS](https://www.emailjs.com/) – envio de e-mails pelo formulário
