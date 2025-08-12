@@ -1,4 +1,4 @@
-@import './variaveis';
+@use './variaveis' as *;
 
 body {
  background-color: var(--Fundo-Principal);
