@@ -1,72 +1,54 @@
 import { SiGithub } from 'react-icons/si';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import style from './style.module.scss';
-import ListaDeContatosImg from '../../assets/ListaDeContatos.png';
-import Efood from '../../assets/Efood.png';
+import { useProjects } from '../../hooks/useProjects';
 
 const Projetos = () => {
+ const { projects, loading } = useProjects();
+
+ if (loading) return <p>Carregando projetos...</p>;
+
+ const projetosPrioritarios = projects
+  .filter(p => p.Prioridade === true)
+  .slice(0, 3);
+
  return (
   <>
    <section className={style.projectsSection}>
     <h3 className={style.projectsTitle}>Meus Projetos</h3>
     <div className={style.projectsList}>
-     <div className={style.projectCard}>
-      <img
-       className={style.projectCardImg}
-       src={ListaDeContatosImg}
-       alt=""
-      />
-      <h4 className={style.projectCardTitle}>Lista de Contatos</h4>
-      <p className={style.projectCardText}>
-       Lista de contatos feita em React, Redux, Styled Componentes e
-       localStorage para armazenamento de dados local
-      </p>
-      <div className={style.projectCardButton}>
-       <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://github.com/felipoxy1/ListaDeContatos"
-       >
-        Github
-        <SiGithub size={20} />
-       </a>
-       <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://lista-de-contatos-v2.vercel.app/"
-       >
-        Acessar o site
-        <FaExternalLinkAlt size={18} />
-       </a>
+     {projetosPrioritarios.length === 0 && (
+      <p>Nenhum projeto com prioridade encontrado.</p>
+     )}
+     {projetosPrioritarios.map(project => (
+      <div className={style.projectCard} key={project.id}>
+       {project.Imagem && (
+        <img
+         className={style.projectCardImg}
+         src={project.Imagem}
+         alt={project.Nome}
+        />
+       )}
+       <h4 className={style.projectCardTitle}>{project.Nome}</h4>
+       <p className={style.projectCardText}>{project.Desc}</p>
+       <div className={style.projectCardButton}>
+        {project.GitLink && (
+         <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={project.GitLink}
+         >
+          Github <SiGithub size={20} />
+         </a>
+        )}
+        {project.Link && (
+         <a target="_blank" rel="noopener noreferrer" href={project.Link}>
+          Acessar o site <FaExternalLinkAlt size={18} />
+         </a>
+        )}
+       </div>
       </div>
-     </div>
-     <div className={style.projectCard}>
-      <img className={style.projectCardImg} src={Efood} alt="" />
-      <h4 className={style.projectCardTitle}>Efood</h4>
-      <p className={style.projectCardText}>
-       Site que simula um especime de ifood com restaurantes de cardapios
-       dentro, tera tambem adicionar ao carrinho e pagamento, ainda nao
-       esta pronto.
-      </p>
-      <div className={style.projectCardButton}>
-       <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://github.com/felipoxy1/Efood"
-       >
-        Github
-        <SiGithub size={20} />
-       </a>
-       <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://efood-ten-beige.vercel.app/"
-       >
-        Acessar o site
-        <FaExternalLinkAlt size={18} />
-       </a>
-      </div>
-     </div>
+     ))}
     </div>
    </section>
   </>
