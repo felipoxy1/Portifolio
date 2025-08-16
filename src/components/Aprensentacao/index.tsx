@@ -77,7 +77,7 @@ const Apresentacao = () => {
    <a
     className={styles.buttonDownload}
     download
-    href="/Luiz-Curriculo.pdf"
+    href="/public/Curriculo_FrontEnd-LuizAlbuquerque.pdf"
    >
     Download CV
    </a>
