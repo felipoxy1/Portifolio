@@ -6,6 +6,7 @@ export interface Project {
  id: string;
  Nome: string;
  Desc: string;
+ DescMaior: string;
  GitLink: string;
  Link: string;
  Imagem?: string;

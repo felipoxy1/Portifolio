@@ -75,3 +75,81 @@ a {
  gap: 5px;
  margin-bottom: 10px;
 }
+
+.Overlay {
+ position: fixed;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.7);
+ z-index: 1000;
+}
+
+.OverlayContent {
+ position: relative;
+ background-color: var(--Fundo-Principal);
+ width: 90vw;
+ max-width: 800px;
+ max-height: 90vh;
+ overflow-y: auto;
+ padding: 2rem;
+ border-radius: 15px;
+}
+
+.imageContainer {
+ width: 100%;
+ height: 250px;
+ overflow: hidden;
+ border-radius: 8px;
+ margin: 1.5rem 0;
+
+ img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+ }
+}
+
+.closeButton {
+ position: absolute;
+ top: 15px;
+ right: 20px;
+ background: none;
+ border: none;
+ font-size: 2rem;
+ color: var(--Texto-Principal);
+ cursor: pointer;
+ line-height: 1;
+}
+
+.linksContainer {
+ display: flex;
+ justify-content: space-between;
+ margin-top: 2rem;
+}
+
+.linkGitHub,
+.linkSite {
+ padding: 1rem;
+ width: 9rem;
+ border-radius: 0.5rem;
+ display: flex;
+ justify-content: center;
+
+ svg {
+  margin: 0;
+ }
+}
+
+.linkGitHub {
+ background-color: #1d2839;
+}
+
+.linkSite {
+ background-color: green;
+}
